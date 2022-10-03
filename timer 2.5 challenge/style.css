@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --clock-color: #323238;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: clamp(2.0rem, 10.0rem + 10vw, 20.0rem)
+}
+
+button {
+    border-radius: 2.4rem;
+    border: none;
+
+}
+
+#mood {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+}
+
+#timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* margin-right: 20.0rem */
+}
+
+#clock {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12.6rem;
+    line-height: 11rem;
+    font-weight: 700;
+    color: #323238;
+
+    margin-bottom: 4.8rem;
+    
+    
+}
+
+span {
+    padding: 0;
+    margin: 0;
+}
+
+#button-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+}
+
+
+/* 
+.forest svg path:active,
+.rain svg path:active,
+.coffee svg path:active,
+.fire svg path:active {
+    fill: #02799D;
+    transition: 100ms;
+}
+
+.forest svg:active path:nth-child(2),
+.rain svg:active path:nth-child(2),
+.coffee svg:active path:nth-child(2),
+.fire svg:active path:nth-child(2) {
+    fill: white;
+    transition: 200ms;
+} */
+
+.bgOn {
+    fill: #02799D;
+    transition: 200ms;
+}
+
+
+.bgOff {
+    fill: #E1E1E6;
+    transition: 200ms;
+}
+
+.fillOn {
+    fill: #E1E1E6;
+    transition: 200ms;
+}
+
+
+.fillOff {
+    fill: #323238;
+    transition: 200ms;
+}
+
